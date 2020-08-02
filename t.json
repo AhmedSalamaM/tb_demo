@@ -1,10 +1,35 @@
-[{"name":"Afghanistan"},
-{"name":"Afghanistan"},
-{"name":"Afghanistan"},
-{"name":"Afghanistan"},
-{"name":"Afghanistan"},
-{"name":"Afghanistan"},
-{"name":"Afghanistan"},
-{"name":"Afghanistan"},
-{"name":"Afghanistan"},
-{"name":"Afghanistan"}]
+[{"name":"High Blood Pressure"},
+{"name":"Stomach Ulcer"},
+{"name":"Asthma"},
+{"name":"COPD"},
+{"name":"Sleep Apnea"},
+{"name":"Anxiety"},
+{"name":"Heart Attack"},
+{"name":"Gout"},
+{"name":"Depression"},
+{"name":"Heart Surgery"},
+ {"name":"Cancer"},
+ {"name":"Hepatitis"},
+ {"name":"Diabetes Mellitus
+"},
+ {"name":"Bipolar Disorder
+"},
+ {"name":"Heart Disease
+"},
+ {"name":"Low Thyroid
+"},
+ {"name":"Kidney Disease
+"},
+ {"name":"Fibromyalgia
+"},
+ {"name":"Bleeding Disorder
+"},
+ {"name":"Seizures
+"},
+ {"name":"Drug Use
+"},
+ {"name":"Chronic Pain Syndrome"}
+]
+
+
+
