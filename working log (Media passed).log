@@ -1,0 +1,555 @@
+2021-08-12 17:09:10.909478 [NOTICE] switch_channel.c:1118 New Channel sofia/internal/1002@bridgedev.cv19.app:6060 [d6baa15a-24a6-4e22-a192-7ad299fb78e7]
+2021-08-12 17:09:10.909478 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/1002@bridgedev.cv19.app:6060) Running State Change CS_NEW (Cur 1 Tot 12711)
+2021-08-12 17:09:10.909478 [INFO] sofia.c:10362 sofia/internal/1002@bridgedev.cv19.app:6060 receiving invite from 146.70.19.101:51085 version: 1.10.6 -release-18-1ff9d0a60e 64bit call-id: UJ6zZi7Kv9GuqBSn-3hyyg..
+2021-08-12 17:09:10.909478 [DEBUG] sofia.c:10456 verifying acl "domains" for ip/port 146.70.19.101:0.
+2021-08-12 17:09:10.909478 [WARNING] sofia_reg.c:1795 SIP auth challenge (INVITE) on sofia profile 'internal' for [19389@bridgedev.cv19.app] from ip 146.70.19.101
+2021-08-12 17:09:10.909478 [DEBUG] switch_core_state_machine.c:604 (sofia/internal/1002@bridgedev.cv19.app:6060) State NEW
+2021-08-12 17:09:10.909478 [DEBUG] sofia.c:2447 detaching session d6baa15a-24a6-4e22-a192-7ad299fb78e7
+2021-08-12 17:09:11.329481 [DEBUG] sofia.c:2562 Re-attaching to session d6baa15a-24a6-4e22-a192-7ad299fb78e7
+2021-08-12 17:09:11.329481 [INFO] sofia.c:10362 sofia/internal/1002@bridgedev.cv19.app:6060 receiving invite from 146.70.19.101:51085 version: 1.10.6 -release-18-1ff9d0a60e 64bit call-id: UJ6zZi7Kv9GuqBSn-3hyyg..
+2021-08-12 17:09:11.329481 [DEBUG] sofia.c:10456 verifying acl "domains" for ip/port 146.70.19.101:0.
+2021-08-12 17:09:11.349462 [DEBUG] sofia.c:11564 Setting NAT mode based on via received
+2021-08-12 17:09:11.349462 [DEBUG] sofia.c:7406 Channel sofia/internal/1002@bridgedev.cv19.app:6060 entering state [received][100]
+2021-08-12 17:09:11.349462 [DEBUG] sofia.c:7416 Remote SDP:
+v=0
+o=Zoiper 375005827 0 IN IP4 10.254.0.1
+s=Z
+c=IN IP4 10.254.0.1
+t=0 0
+m=audio 57182 RTP/AVP 106 9 3 111 0 8 97 102 110 112 98 101 100 99
+a=rtpmap:106 opus/48000/2
+a=fmtp:106 minptime=20; cbr=1; maxaveragebitrate=40000; useinbandfec=1
+a=rtpmap:9 G722/8000
+a=rtpmap:3 GSM/8000
+a=rtpmap:111 speex/16000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:97 iLBC/8000
+a=fmtp:97 mode=30
+a=rtpmap:102 G726-32/8000
+a=rtpmap:110 speex/8000
+a=rtpmap:112 speex/32000
+a=rtpmap:98 telephone-event/48000
+a=fmtp:98 0-16
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=rtpmap:100 telephone-event/16000
+a=fmtp:100 0-16
+a=rtpmap:99 telephone-event/32000
+a=fmtp:99 0-16
+
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [opus:106:48000:20:0:1]/[opus:116:48000:20:0:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5656 Audio Codec Compare [opus:116:48000:20:0:1] ++++ is saved as a match
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [opus:106:48000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [opus:106:48000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [G722:9:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [G722:9:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [G722:9:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [GSM:3:8000:20:13200:1]/[opus:116:48000:20:0:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [GSM:3:8000:20:13200:1]/[PCMU:0:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [GSM:3:8000:20:13200:1]/[PCMA:8:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [speex:111:16000:20:0:1]/[opus:116:48000:20:0:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [speex:111:16000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [speex:111:16000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5656 Audio Codec Compare [PCMU:0:8000:20:64000:1] ++++ is saved as a match
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5656 Audio Codec Compare [PCMA:8:8000:20:64000:1] ++++ is saved as a match
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [iLBC:97:8000:30:0:1]/[opus:116:48000:20:0:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [iLBC:97:8000:30:0:1]/[PCMU:0:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [iLBC:97:8000:30:0:1]/[PCMA:8:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [G726-32:102:8000:20:0:1]/[opus:116:48000:20:0:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [G726-32:102:8000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [G726-32:102:8000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [speex:110:8000:20:0:1]/[opus:116:48000:20:0:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [speex:110:8000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [speex:110:8000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [speex:112:32000:20:0:1]/[opus:116:48000:20:0:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [speex:112:32000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [speex:112:32000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5517 Set telephone-event payload to 98@48000
+
+
+
+2021-08-12 17:09:11.349462 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:11.349462 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:3847 Set Codec sofia/internal/1002@bridgedev.cv19.app:6060 opus/48000 20 ms 960 samples 0 bits 1 channels
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_codec.c:111 sofia/internal/1002@bridgedev.cv19.app:6060 Original read codec set to opus:116
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5860 Set telephone-event payload to 98@48000
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_media.c:5918 sofia/internal/1002@bridgedev.cv19.app:6060 Set 2833 dtmf send payload to 98 recv payload to 98
+2021-08-12 17:09:11.349462 [DEBUG] sofia.c:7840 (sofia/internal/1002@bridgedev.cv19.app:6060) State Change CS_NEW -> CS_INIT
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/1002@bridgedev.cv19.app:6060) Running State Change CS_INIT (Cur 1 Tot 12711)
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_state_machine.c:628 (sofia/internal/1002@bridgedev.cv19.app:6060) State INIT
+2021-08-12 17:09:11.349462 [DEBUG] mod_sofia.c:93 sofia/internal/1002@bridgedev.cv19.app:6060 SOFIA INIT
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_state_machine.c:40 sofia/internal/1002@bridgedev.cv19.app:6060 Standard INIT
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_state_machine.c:48 (sofia/internal/1002@bridgedev.cv19.app:6060) State Change CS_INIT -> CS_ROUTING
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_state_machine.c:628 (sofia/internal/1002@bridgedev.cv19.app:6060) State INIT going to sleep
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/1002@bridgedev.cv19.app:6060) Running State Change CS_ROUTING (Cur 1 Tot 12711)
+2021-08-12 17:09:11.349462 [DEBUG] switch_channel.c:2332 (sofia/internal/1002@bridgedev.cv19.app:6060) Callstate Change DOWN -> RINGING
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_state_machine.c:644 (sofia/internal/1002@bridgedev.cv19.app:6060) State ROUTING
+2021-08-12 17:09:11.349462 [DEBUG] mod_sofia.c:154 sofia/internal/1002@bridgedev.cv19.app:6060 SOFIA ROUTING
+2021-08-12 17:09:11.349462 [DEBUG] switch_core_state_machine.c:236 sofia/internal/1002@bridgedev.cv19.app:6060 Standard ROUTING
+2021-08-12 17:09:11.349462 [INFO] mod_dialplan_xml.c:637 Processing 1002 <1002>->19389 in context bridgedev.cv19.app
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->user_exists] continue=true
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_exists] ${loopback_leg}() =~ /^B$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [user_exists] () =~ // break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(user_exists=${user_exists id ${destination_number} ${domain_name}}) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(user_exists=false)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [user_exists]=[false]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(from_user_exists=${user_exists id ${sip_from_user} ${sip_from_host}}) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(from_user_exists=true)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [from_user_exists]=[true]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_exists] ${user_exists}(false) =~ /^true$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->call-direction] continue=true
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [call-direction] ${call_direction}() =~ /^(inbound|outbound|local)$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 ANTI-Action export(call_direction=local) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 export(call_direction=local)
+2021-08-12 17:09:11.389477 [DEBUG] switch_channel.c:1310 EXPORT (export_vars) [call_direction]=[local]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->caller-details] continue=true
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [caller-details] ${caller_destination}() =~ /^$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(caller_destination=${destination_number}) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(caller_destination=19389)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [caller_destination]=[19389]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(caller_id_name=${caller_id_name}) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(caller_id_name=1002)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [caller_id_name]=[1002]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(caller_id_number=${caller_id_number}) 
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->07_test] continue=false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [07_test] destination_number(19389) =~ /^(0710[01][0-9])$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->global-variables] continue=true
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [global-variables] () =~ // break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(RFC2822_DATE=${strftime(%a, %d %b %Y %T %z)}) 
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->domain-variables] continue=true
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [domain-variables] () =~ // break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action export(origination_callee_id_name=${destination_number}) 
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->is_loopback] continue=true
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [is_loopback] ${is_follow_me_loopback}() =~ /true/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->user_record] continue=true
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${user_exists}(false) =~ /^true$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [user_record] ${user_record}(all) =~ /^all$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(record_session=true) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(record_session=true)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [record_session]=[true]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${user_exists}(false) =~ /^true$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${call_direction}(local) =~ /^inbound$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${user_record}(all) =~ /^inbound$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${user_exists}(false) =~ /^true$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${call_direction}(local) =~ /^outbound$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${user_record}(all) =~ /^outbound$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${user_exists}(false) =~ /^true$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [user_record] ${call_direction}(local) =~ /^local$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${user_record}(all) =~ /^local$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [user_record] ${from_user_exists}(true) =~ /^true$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(from_user_record=${user_data ${sip_from_user}@${sip_from_host} var user_record}) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(from_user_record=all)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [from_user_record]=[all]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [user_record] ${from_user_exists}(true) =~ /^true$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [user_record] ${from_user_record}(all) =~ /^all$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(record_session=true) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(record_session=true)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [record_session]=[true]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [user_record] ${from_user_exists}(true) =~ /^true$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${call_direction}(local) =~ /^inbound$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${from_user_record}(all) =~ /^inbound$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [user_record] ${from_user_exists}(true) =~ /^true$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${call_direction}(local) =~ /^outbound$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${from_user_record}(all) =~ /^outbound$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [user_record] ${from_user_exists}(true) =~ /^true$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [user_record] ${call_direction}(local) =~ /^local$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_record] ${from_user_record}(all) =~ /^local$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [user_record] ${record_session}(true) =~ /^true$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [user_record] destination_number(19389) =~ /^(?:(?!\*).|\*59|\*\*|\*8|\*67|\*69)+$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(record_path=${recordings_dir}/${domain_name}/archive/${strftime(%Y)}/${strftime(%b)}/${strftime(%d)}) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(record_path=/var/lib/freeswitch/recordings/bridgedev.cv19.app/archive/2021/Aug/12)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [record_path]=[/var/lib/freeswitch/recordings/bridgedev.cv19.app/archive/2021/Aug/12]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(record_name=${uuid}.${record_ext}) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(record_name=d6baa15a-24a6-4e22-a192-7ad299fb78e7.wav)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [record_name]=[d6baa15a-24a6-4e22-a192-7ad299fb78e7.wav]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(recording_follow_transfer=true) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(recording_follow_transfer=true)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [recording_follow_transfer]=[true]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action bind_digit_action(local,*5,api:uuid_record,${uuid} mask ${recordings_dir}/${domain_name}/archive/${strftime(%Y)}/${strftime(%b)}/${strftime(%d)}/${uuid}.${record_ext},both,self) 
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action bind_digit_action(local,*6,api:uuid_record,${uuid} unmask ${recordings_dir}/${domain_name}/archive/${strftime(%Y)}/${strftime(%b)}/${strftime(%d)}/${uuid}.${record_ext},both,self) 
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(record_append=true) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(record_append=true)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [record_append]=[true]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(record_in_progress=true) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(record_in_progress=true)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [record_in_progress]=[true]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(api_on_answer=uuid_record ${uuid} start ${record_path}/${record_name}) 
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->rtp_has_crypto] continue=true
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [rtp_has_crypto] ${rtp_has_crypto}() =~ /^(AEAD_AES_256_GCM_8|AEAD_AES_128_GCM_8|AES_CM_256_HMAC_SHA1_80|AES_CM_192_HMAC_SHA1_80|AES_CM_128_HMAC_SHA1_80|AES_CM_256_HMAC_SHA1_32|AES_CM_192_HMAC_SHA1_32|AES_CM_128_HMAC_SHA1_32|AES_CM_128_NULL_AUTH)$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->redial] continue=true
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [redial] destination_number(19389) =~ /^(redial|\*870)$/ break=on-true
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [redial] () =~ // break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action hash(insert/${domain_name}-last_dial/${caller_id_number}/${destination_number}) 
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->speed_dial] continue=false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [speed_dial] destination_number(19389) =~ /^\*0(.*)$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->user_hold_music] continue=true
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_hold_music] ${hold_music}(local_stream://default) =~ /^$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [user_hold_music] ${user_exists}(false) =~ /true/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->default_caller_id] continue=true
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [default_caller_id] ${emergency_caller_id_name}() =~ /^$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(emergency_caller_id_name=${default_emergency_caller_id_name}) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(emergency_caller_id_name=)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [emergency_caller_id_name]=[UNDEF]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [default_caller_id] ${emergency_caller_id_number}() =~ /^$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(emergency_caller_id_number=${default_emergency_caller_id_number}) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(emergency_caller_id_number=)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [emergency_caller_id_number]=[UNDEF]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [default_caller_id] ${outbound_caller_id_name}() =~ /^$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(outbound_caller_id_name=${default_outbound_caller_id_name}) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(outbound_caller_id_name=)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [outbound_caller_id_name]=[UNDEF]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [default_caller_id] ${outbound_caller_id_number}() =~ /^$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(outbound_caller_id_number=${default_outbound_caller_id_number}) INLINE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(outbound_caller_id_number=)
+2021-08-12 17:09:11.389477 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [outbound_caller_id_number]=[UNDEF]
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->outbound.International] continue=false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [outbound.International] ${user_exists}(false) =~ /false/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [outbound.International] destination_number(19389) =~ /^(\d{12,20})$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->sales] continue=
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [sales] destination_number(19389) =~ /^1122$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->nationwide] continue=false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [nationwide] destination_number(19389) =~ /^\+(1|2[1-689]\d|2[07]|3[0-469]|3[578]\d|4[0-13-9]|42\d|5[09]\d|5[1-8]|6[0-6]|6[7-9]\d|7|8[035789]\d|8[1246]|9[0-58]|9[679]\d)(\d+)/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->ensofia_dialog192020] continue=false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [ensofia_dialog192020] destination_number(19389) =~ /^193030$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->ensofia_dialog192020] continue=false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [ensofia_dialog192020] destination_number(19389) =~ /^192020$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->ensofia_dialog] continue=false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [ensofia_dialog] destination_number(19389) =~ /^1919$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->07_test] continue=false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [07_test] destination_number(19389) =~ /^(0710[01][0-9])$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->public_extensions] continue=false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [public_extensions] destination_number(19389) =~ /^\+(1|2[1-689]\d|2[07]|3[0-469]|3[578]\d|4[0-13-9]|42\d|5[09]\d|5[1-8]|6[0-6]|6[7-9]\d|7|8[035789]\d|8[1246]|9[0-58]|9[679]\d)(\d+)/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->agent_status] continue=false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [agent_status] destination_number(19389) =~ /^\*22$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [agent_status] destination_number(19389) =~ /^(agent\+)(.*)$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->agent_status_id] continue=false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [agent_status_id] destination_number(19389) =~ /^\*23$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->group-intercept] continue=false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [group-intercept] destination_number(19389) =~ /^\*8$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 parsing [bridgedev.cv19.app->Ensofia] continue=
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (FAIL) [Ensofia] destination_number(19389) =~ /^([^#]+#)(.*)$/ break=never
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Regex (PASS) [Ensofia] destination_number(19389) =~ /^19389$/ break=on-false
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action answer() 
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(call_center_queue_uuid=e0f61e6c-ccb4-4c49-9d0c-035af73050ed) 
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(queue_extension=19389) 
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(cc_export_vars=call_center_queue_uuid) 
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action set(hangup_after_bridge=true) 
+Dialplan: sofia/internal/1002@bridgedev.cv19.app:6060 Action callcenter(19389@bridgedev.cv19.app) 
+
+
+2021-08-12 17:09:11.409454 [DEBUG] switch_core_state_machine.c:287 (sofia/internal/1002@bridgedev.cv19.app:6060) State Change CS_ROUTING -> CS_EXECUTE
+2021-08-12 17:09:11.409454 [DEBUG] switch_core_state_machine.c:644 (sofia/internal/1002@bridgedev.cv19.app:6060) State ROUTING going to sleep
+2021-08-12 17:09:11.409454 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/1002@bridgedev.cv19.app:6060) Running State Change CS_EXECUTE (Cur 1 Tot 12711)
+2021-08-12 17:09:11.409454 [DEBUG] switch_core_state_machine.c:651 (sofia/internal/1002@bridgedev.cv19.app:6060) State EXECUTE
+2021-08-12 17:09:11.409454 [DEBUG] mod_sofia.c:209 sofia/internal/1002@bridgedev.cv19.app:6060 SOFIA EXECUTE
+2021-08-12 17:09:11.409454 [DEBUG] switch_core_state_machine.c:329 sofia/internal/1002@bridgedev.cv19.app:6060 Standard EXECUTE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(caller_id_number=1002)
+2021-08-12 17:09:11.409454 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [caller_id_number]=[1002]
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(RFC2822_DATE=Thu, 12 Aug 2021 17:09:11 +0000)
+2021-08-12 17:09:11.409454 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [RFC2822_DATE]=[Thu, 12 Aug 2021 17:09:11 +0000]
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 export(origination_callee_id_name=19389)
+2021-08-12 17:09:11.409454 [DEBUG] switch_channel.c:1310 EXPORT (export_vars) [origination_callee_id_name]=[19389]
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 bind_digit_action(local,*5,api:uuid_record,d6baa15a-24a6-4e22-a192-7ad299fb78e7 mask /var/lib/freeswitch/recordings/bridgedev.cv19.app/archive/2021/Aug/12/d6baa15a-24a6-4e22-a192-7ad299fb78e7.wav,both,self)
+2021-08-12 17:09:11.409454 [INFO] switch_ivr_async.c:219 Digit parser DPTOOLS: Setting realm to 'local'
+2021-08-12 17:09:11.409454 [DEBUG] switch_ivr_async.c:344 Digit parser DPTOOLS: binding *5/local/0 callback: 0x7f90c5225f50 data: 0x558f25764580
+2021-08-12 17:09:11.409454 [INFO] switch_ivr_async.c:219 Digit parser DPTOOLS: Setting realm to 'local'
+2021-08-12 17:09:11.409454 [DEBUG] switch_ivr_async.c:344 Digit parser DPTOOLS: binding *5/local/0 callback: 0x7f90c5225f50 data: 0x558f25764680
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 bind_digit_action(local,*6,api:uuid_record,d6baa15a-24a6-4e22-a192-7ad299fb78e7 unmask /var/lib/freeswitch/recordings/bridgedev.cv19.app/archive/2021/Aug/12/d6baa15a-24a6-4e22-a192-7ad299fb78e7.wav,both,self)
+2021-08-12 17:09:11.409454 [DEBUG] switch_ivr_async.c:344 Digit parser DPTOOLS: binding *6/local/0 callback: 0x7f90c5225f50 data: 0x558f257649c8
+2021-08-12 17:09:11.409454 [DEBUG] switch_ivr_async.c:344 Digit parser DPTOOLS: binding *6/local/0 callback: 0x7f90c5225f50 data: 0x558f25764ac8
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(api_on_answer=uuid_record d6baa15a-24a6-4e22-a192-7ad299fb78e7 start /var/lib/freeswitch/recordings/bridgedev.cv19.app/archive/2021/Aug/12/d6baa15a-24a6-4e22-a192-7ad299fb78e7.wav)
+2021-08-12 17:09:11.409454 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [api_on_answer]=[uuid_record d6baa15a-24a6-4e22-a192-7ad299fb78e7 start /var/lib/freeswitch/recordings/bridgedev.cv19.app/archive/2021/Aug/12/d6baa15a-24a6-4e22-a192-7ad299fb78e7.wav]
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 hash(insert/bridgedev.cv19.app-last_dial/1002/19389)
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 answer()
+
+2021-08-12 17:09:11.409454 [DEBUG] switch_core_media.c:8675 AUDIO RTP [sofia/internal/1002@bridgedev.cv19.app:6060] 198.199.107.243 port 25026 -> 10.254.0.1:?? port 57182 codec: 106 ms: 20
+2021-08-12 17:09:11.409454 [DEBUG] switch_rtp.c:4478 Starting timer [soft] 960 bytes per 20ms
+2021-08-12 17:09:11.409454 [DEBUG] switch_core_media.c:8989 sofia/internal/1002@bridgedev.cv19.app:6060 Set 2833 dtmf send payload to 98
+2021-08-12 17:09:11.409454 [DEBUG] switch_core_media.c:8996 sofia/internal/1002@bridgedev.cv19.app:6060 Set 2833 dtmf receive payload to 98
+2021-08-12 17:09:11.409454 [DEBUG] switch_core_media.c:9019 sofia/internal/1002@bridgedev.cv19.app:6060 Set rtp dtmf delay to 40
+2021-08-12 17:09:11.409454 [DEBUG] mod_sofia.c:898 Local SDP sofia/internal/1002@bridgedev.cv19.app:6060:
+v=0
+o=FreeSWITCH 1628763125 1628763126 IN IP4 198.199.107.243
+s=FreeSWITCH
+c=IN IP4 198.199.107.243
+t=0 0
+m=audio 25026 RTP/AVP 106 98
+a=rtpmap:106 opus/48000/2
+a=fmtp:106 useinbandfec=1; minptime=20
+a=rtpmap:98 telephone-event/48000
+a=fmtp:98 0-16
+a=ptime:20
+a=sendrecv
+
+2021-08-12 17:09:11.409454 [NOTICE] mod_dptools.c:1419 Channel [sofia/internal/1002@bridgedev.cv19.app:6060] has been answered
+2021-08-12 17:09:11.409454 [DEBUG] switch_channel.c:3662 sofia/internal/1002@bridgedev.cv19.app:6060 process uuid_record d6baa15a-24a6-4e22-a192-7ad299fb78e7 start /var/lib/freeswitch/recordings/bridgedev.cv19.app/archive/2021/Aug/12/d6baa15a-24a6-4e22-a192-7ad299fb78e7.wav: uuid_record(d6baa15a-24a6-4e22-a192-7ad299fb78e7 start /var/lib/freeswitch/recordings/bridgedev.cv19.app/archive/2021/Aug/12/d6baa15a-24a6-4e22-a192-7ad299fb78e7.wav)
+
+2021-08-12 17:09:11.409454 [DEBUG] sofia.c:7406 Channel sofia/internal/1002@bridgedev.cv19.app:6060 entering state [completed][200]
+2021-08-12 17:09:11.409454 [DEBUG] switch_ivr_async.c:1427 Record session sample rate: 48000 -> 48000
+2021-08-12 17:09:11.409454 [DEBUG] switch_core_media_bug.c:970 Attaching BUG to sofia/internal/1002@bridgedev.cv19.app:6060
+2021-08-12 17:09:11.429460 [DEBUG] switch_channel.c:3865 (sofia/internal/1002@bridgedev.cv19.app:6060) Callstate Change RINGING -> ACTIVE
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(call_center_queue_uuid=e0f61e6c-ccb4-4c49-9d0c-035af73050ed)
+2021-08-12 17:09:11.429460 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [call_center_queue_uuid]=[e0f61e6c-ccb4-4c49-9d0c-035af73050ed]
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(queue_extension=19389)
+2021-08-12 17:09:11.429460 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [queue_extension]=[19389]
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(cc_export_vars=call_center_queue_uuid)
+2021-08-12 17:09:11.429460 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [cc_export_vars]=[call_center_queue_uuid]
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 set(hangup_after_bridge=true)
+2021-08-12 17:09:11.429460 [DEBUG] mod_dptools.c:1685 SET sofia/internal/1002@bridgedev.cv19.app:6060 [hangup_after_bridge]=[true]
+EXECUTE [depth=0] sofia/internal/1002@bridgedev.cv19.app:6060 callcenter(19389@bridgedev.cv19.app)
+2021-08-12 17:09:11.429460 [DEBUG] mod_callcenter.c:3111 Member 1002 <1002> joining queue 19389@bridgedev.cv19.app
+2021-08-12 17:09:11.429460 [DEBUG] mod_callcenter.c:3375 Queue has 1 waiting calls.
+2021-08-12 17:09:11.429460 [DEBUG] mod_local_stream.c:909 Opening Stream [default/48000] 48000hz
+2021-08-12 17:09:11.429460 [DEBUG] switch_ivr_play_say.c:1486 Codec Activated L16@48000hz 1 channels 20ms
+2021-08-12 17:09:11.429460 [DEBUG] switch_ivr_async.c:1717 No silence detection configured; assuming start of speech
+2021-08-12 17:09:11.469470 [DEBUG] mod_callcenter.c:1180 Updated Agent 239ccb22-8868-43f7-a945-81c0ec915c4d set state = Receiving
+2021-08-12 17:09:11.469470 [DEBUG] mod_callcenter.c:1753 Setting outbound caller_id_name to: 1002
+2021-08-12 17:09:11.469470 [DEBUG] switch_channel.c:1264 sofia/internal/1002@bridgedev.cv19.app:6060 EXPORTING[cc_export_vars] [call_center_queue_uuid]=[e0f61e6c-ccb4-4c49-9d0c-035af73050ed] to event
+2021-08-12 17:09:11.469470 [DEBUG] switch_ivr_originate.c:2272 Parsing global variables
+2021-08-12 17:09:11.469470 [DEBUG] switch_ivr_originate.c:2272 Parsing global variables
+2021-08-12 17:09:11.469470 [DEBUG] mod_rtc.c:390 () State Change CS_NEW -> CS_INIT
+2021-08-12 17:09:11.469470 [NOTICE] switch_channel.c:1118 New Channel verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c [da52b930-6a28-4b97-ae13-8b3d16872ea5]
+2021-08-12 17:09:11.469470 [DEBUG] switch_core_state_machine.c:585 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) Running State Change CS_INIT (Cur 2 Tot 12712)
+2021-08-12 17:09:11.469470 [DEBUG] switch_core_state_machine.c:628 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State INIT
+2021-08-12 17:09:11.469470 [DEBUG] mod_verto.c:2271 Local verto.invite SDP verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c:
+v=0
+o=FreeSWITCH 1628770285 1628770286 IN IP4 198.199.107.243
+s=FreeSWITCH
+c=IN IP4 198.199.107.243
+t=0 0
+a=msid-semantic: WMS 45reVQlTygPGbSeqg4DmjutHHHnGxBpr
+m=audio 17866 RTP/SAVPF 102 9
+a=rtpmap:102 opus/48000/2
+a=fmtp:102 useinbandfec=1; maxaveragebitrate=30000; maxplaybackrate=48000; ptime=20; minptime=10; maxptime=40
+a=rtpmap:9 G722/8000
+a=fingerprint:sha-256 94:A0:94:02:A6:A5:25:37:5E:B6:47:C6:6F:46:6E:97:9C:D6:DF:01:A1:CE:CB:68:0E:A1:63:9B:9E:1E:15:FE
+a=setup:actpass
+a=rtcp-mux
+a=rtcp:17866 IN IP4 198.199.107.243
+a=ssrc:3981255663 cname:xGwjnH2LNIhPql6x
+a=ssrc:3981255663 msid:45reVQlTygPGbSeqg4DmjutHHHnGxBpr a0
+a=ssrc:3981255663 mslabel:45reVQlTygPGbSeqg4DmjutHHHnGxBpr
+a=ssrc:3981255663 label:45reVQlTygPGbSeqg4DmjutHHHnGxBpra0
+a=ice-ufrag:gzKqT3XrAbYYCdg0
+a=ice-pwd:KC9Xa2yOAGuRSqeYQOfAH2R8
+
+
+
+
+a=candidate:9303058326 1 udp 2130706431 198.199.107.243 17866 typ host generation 0
+a=candidate:9303058326 2 udp 2130706431 198.199.107.243 17866 typ host generation 0
+
+
+
+
+a=silenceSupp:off - - - -
+a=ptime:20
+a=sendrecv
+
+2021-08-12 17:09:11.469470 [NOTICE] mod_verto.c:2371 Ring-Ready verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c!
+2021-08-12 17:09:11.469470 [DEBUG] switch_channel.c:3437 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) Callstate Change DOWN -> RINGING
+2021-08-12 17:09:11.469470 [DEBUG] switch_core_state_machine.c:40 verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c Standard INIT
+2021-08-12 17:09:11.469470 [DEBUG] switch_core_state_machine.c:48 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State Change CS_INIT -> CS_ROUTING
+2021-08-12 17:09:11.469470 [DEBUG] switch_core_state_machine.c:628 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State INIT going to sleep
+2021-08-12 17:09:11.469470 [DEBUG] switch_core_state_machine.c:585 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) Running State Change CS_ROUTING (Cur 2 Tot 12712)
+2021-08-12 17:09:11.469470 [DEBUG] switch_core_state_machine.c:644 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State ROUTING
+2021-08-12 17:09:11.469470 [DEBUG] mod_rtc.c:89 verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c RTC ROUTING
+2021-08-12 17:09:11.469470 [DEBUG] switch_ivr_originate.c:67 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State Change CS_ROUTING -> CS_CONSUME_MEDIA
+2021-08-12 17:09:11.469470 [DEBUG] switch_core_state_machine.c:644 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State ROUTING going to sleep
+2021-08-12 17:09:11.469470 [DEBUG] switch_core_state_machine.c:585 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) Running State Change CS_CONSUME_MEDIA (Cur 2 Tot 12712)
+2021-08-12 17:09:11.469470 [DEBUG] switch_core_state_machine.c:663 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State CONSUME_MEDIA
+2021-08-12 17:09:11.469470 [DEBUG] switch_core_state_machine.c:663 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State CONSUME_MEDIA going to sleep
+2021-08-12 17:09:11.829462 [DEBUG] sofia.c:7406 Channel sofia/internal/1002@bridgedev.cv19.app:6060 entering state [ready][200]
+2021-08-12 17:09:12.209476 [DEBUG] switch_core_io.c:448 Setting BUG Codec opus:116
+2021-08-12 17:09:12.209476 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:12.449468 [INFO] switch_rtp.c:7753 Auto Changing audio port from 10.254.0.1:57182 to 146.70.19.101:26107
+2021-08-12 17:09:20.509523 [DEBUG] mod_verto.c:2752 Remote SDP verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c:
+v=0
+o=mozilla...THIS_IS_SDPARTA-91.0 3216160423214532060 0 IN IP4 0.0.0.0
+s=-
+t=0 0
+a=sendrecv
+a=fingerprint:sha-256 D4:2D:27:2E:1F:E0:42:06:65:6B:4E:0D:64:C5:AB:E0:32:75:F8:5B:E2:FF:D5:3D:3F:FA:FD:12:F5:08:BA:9B
+a=ice-options:trickle
+a=msid-semantic:WMS *
+m=audio 9 RTP/SAVPF 102 9
+c=IN IP4 0.0.0.0
+a=sendrecv
+a=fmtp:102 maxplaybackrate=48000;stereo=1;useinbandfec=1
+a=ice-pwd:27c06de5da6afd7206712d737279ba04
+a=ice-ufrag:b38127ca
+a=mid:0
+a=msid:{a6a3c890-e21c-42d5-84ff-33e293d26b86} {52b6a990-1516-4b6f-beed-b589b1544490}
+a=rtcp-mux
+a=rtpmap:102 opus/48000/2
+a=rtpmap:9 G722/8000/1
+a=setup:active
+a=ssrc:568063433 cname:{5fc12cb7-ef9f-421f-8f70-ff204a0d56b1}
+
+
+
+a=candidate:0 1 UDP 2122055935 192.168.1.17 39383 typ host
+a=candidate:3 1 UDP 2122121471 172.17.0.1 51433 typ host
+a=candidate:6 1 UDP 2122252543 172.27.225.36 50375 typ host
+a=candidate:9 1 UDP 2122187007 fd80:7d14:460:bf00:18df:aab6:1b3d:bd1e 46503 typ host
+a=candidate:12 1 TCP 2105327871 192.168.1.17 9 typ host tcptype active
+a=candidate:14 1 TCP 2105393407 172.17.0.1 9 typ host tcptype active
+a=candidate:16 1 TCP 2105524479 172.27.225.36 9 typ host tcptype active
+a=candidate:18 1 TCP 2105458943 fd80:7d14:460:bf00:18df:aab6:1b3d:bd1e 9 typ host tcptype active
+a=candidate:4 1 UDP 1685921791 167.71.123.200 51433 typ srflx raddr 172.17.0.1 rport 51433
+a=candidate:5 1 UDP 92086271 138.197.204.81 65452 typ relay raddr 138.197.204.81 rport 65452
+a=candidate:7 1 UDP 1686052863 167.71.123.200 50375 typ srflx raddr 172.27.225.36 rport 50375
+a=candidate:8 1 UDP 92217343 138.197.204.81 65439 typ relay raddr 138.197.204.81 rport 65439
+a=candidate:17 1 UDP 8331263 138.197.204.81 65438 typ relay raddr 138.197.204.81 rport 65438
+a=candidate:15 1 UDP 8200191 138.197.204.81 65489 typ relay raddr 138.197.204.81 rport 65489
+
+
+
+
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [opus:102:48000:20:0:2]/[opus:116:48000:20:0:1]
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:5656 Audio Codec Compare [opus:116:48000:20:0:1] ++++ is saved as a match
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [opus:102:48000:20:0:2]/[G722:9:8000:20:64000:1]
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [G722:9:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:5601 Audio Codec Compare [G722:9:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:5656 Audio Codec Compare [G722:9:8000:20:64000:1] ++++ is saved as a match
+2021-08-12 17:09:20.509523 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [120000bps]
+2021-08-12 17:09:20.509523 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [120000bps]
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:3847 Set Codec verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c opus/48000 20 ms 960 samples 0 bits 2 channels
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_codec.c:111 verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c Original read codec set to opus:116
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4295 Save audio Candidate cid: 1 proto: UDP type: host addr: 192.168.1.17:39383
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4295 Save audio Candidate cid: 1 proto: UDP type: host addr: 172.17.0.1:51433
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4295 Save audio Candidate cid: 1 proto: UDP type: host addr: 172.27.225.36:50375
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4289 Drop audio Candidate cid: 1 proto: UDP type: host addr: fd80:7d14:460:bf00:18df:aab6:1b3d:bd1e:46503 (no network path)
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4295 Save audio Candidate cid: 1 proto: UDP type: srflx addr: 167.71.123.200:51433
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4295 Save audio Candidate cid: 1 proto: UDP type: relay addr: 138.197.204.81:65452
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4295 Save audio Candidate cid: 1 proto: UDP type: srflx addr: 167.71.123.200:50375
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4295 Save audio Candidate cid: 1 proto: UDP type: relay addr: 138.197.204.81:65439
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4295 Save audio Candidate cid: 1 proto: UDP type: relay addr: 138.197.204.81:65438
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4295 Save audio Candidate cid: 1 proto: UDP type: relay addr: 138.197.204.81:65489
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4340 Searching for rtp candidate.
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4349 Choose rtp candidate, index 3, 167.71.123.200:51433
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4115 verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c choosing family v4
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4360 Choose same candidate, index 0, for rtcp based on rtcp-mux attribute 167.71.123.200:51433
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4412 setting remote audio ice addr to index 3 167.71.123.200:51433 based on candidate
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:4447 Setting remote rtcp audio addr to 167.71.123.200:51433 based on candidate
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:5925 No 2833 in SDP.  Disable 2833 dtmf and switch to INFO
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:8675 AUDIO RTP [verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c] 198.199.107.243 port 17866 -> 167.71.123.200 port 51433 codec: 102 ms: 20
+2021-08-12 17:09:20.509523 [DEBUG] switch_rtp.c:4478 Starting timer [soft] 960 bytes per 20ms
+2021-08-12 17:09:20.509523 [INFO] switch_core_media.c:8857 Activating Audio ICE
+2021-08-12 17:09:20.509523 [NOTICE] switch_rtp.c:4980 Activating RTP audio ICE: b38127ca:gzKqT3XrAbYYCdg0 167.71.123.200:51433
+2021-08-12 17:09:20.509523 [DEBUG] switch_core_media.c:8897 Activating RTCP PORT 51433
+2021-08-12 17:09:20.509523 [DEBUG] switch_rtp.c:4876 RTCP send rate is: 1000 and packet rate is: 20000 Remote Port: 51433
+2021-08-12 17:09:20.509523 [INFO] switch_core_media.c:8908 Skipping RTCP ICE (Same as RTP)
+2021-08-12 17:09:20.509523 [INFO] switch_rtp.c:3772 Activate RTP/RTCP audio DTLS server
+2021-08-12 17:09:20.529473 [INFO] switch_rtp.c:3955 Changing audio DTLS state from OFF to HANDSHAKE
+2021-08-12 17:09:20.529473 [DEBUG] switch_core_media.c:2555 Setting Jitterbuffer to 20ms (1 frames) (50 max frames)
+2021-08-12 17:09:20.529473 [DEBUG] switch_core_media.c:8657 Audio params are unchanged for verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c.
+2021-08-12 17:09:20.529473 [NOTICE] mod_verto.c:2786 Channel [verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c] has been answered
+2021-08-12 17:09:20.529473 [DEBUG] switch_channel.c:3865 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) Callstate Change RINGING -> ACTIVE
+2021-08-12 17:09:20.529473 [DEBUG] switch_ivr_originate.c:3883 Originate Resulted in Success: [verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c]
+2021-08-12 17:09:20.529473 [DEBUG] switch_ivr_originate.c:3883 Originate Resulted in Success: [verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c]
+2021-08-12 17:09:20.529473 [WARNING] switch_ivr_async.c:2872 Already recording [/var/lib/freeswitch/recordings/bridgedev.cv19.app/archive/2021/Aug/12/d6baa15a-24a6-4e22-a192-7ad299fb78e7.wav]
+2021-08-12 17:09:20.529473 [DEBUG] mod_callcenter.c:1965 Agent 239ccb22-8868-43f7-a945-81c0ec915c4d answered "1002" <1002> from queue 19389@bridgedev.cv19.app (Recorded)
+2021-08-12 17:09:20.529473 [DEBUG] switch_ivr_bridge.c:2213 (sofia/internal/1002@bridgedev.cv19.app:6060) State Change CS_EXECUTE -> CS_HIBERNATE
+2021-08-12 17:09:20.529473 [DEBUG] switch_ivr_bridge.c:2215 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State Change CS_CONSUME_MEDIA -> CS_HIBERNATE
+2021-08-12 17:09:20.529473 [DEBUG] switch_core_state_machine.c:585 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) Running State Change CS_HIBERNATE (Cur 2 Tot 12712)
+2021-08-12 17:09:20.529473 [DEBUG] switch_core_state_machine.c:666 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State HIBERNATE
+2021-08-12 17:09:20.529473 [DEBUG] mod_rtc.c:110 verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c RTC HIBERNATE
+2021-08-12 17:09:20.529473 [DEBUG] switch_ivr_bridge.c:1144 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State Change CS_HIBERNATE -> CS_RESET
+2021-08-12 17:09:20.529473 [DEBUG] switch_core_state_machine.c:666 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State HIBERNATE going to sleep
+2021-08-12 17:09:20.529473 [DEBUG] switch_core_state_machine.c:585 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) Running State Change CS_RESET (Cur 2 Tot 12712)
+2021-08-12 17:09:20.529473 [DEBUG] switch_core_state_machine.c:647 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State RESET
+2021-08-12 17:09:20.529473 [DEBUG] mod_rtc.c:99 verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c RTC RESET
+2021-08-12 17:09:20.529473 [DEBUG] switch_ivr_bridge.c:1129 verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c CUSTOM RESET
+2021-08-12 17:09:20.529473 [DEBUG] switch_core_state_machine.c:188 verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c Standard RESET
+2021-08-12 17:09:20.529473 [DEBUG] switch_core_state_machine.c:647 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State RESET going to sleep
+2021-08-12 17:09:20.549466 [DEBUG] switch_ivr_play_say.c:1931 done playing file local_stream://default
+2021-08-12 17:09:20.549466 [DEBUG] mod_callcenter.c:3283 Member 1002 <1002> is answered by an agent in queue 19389@bridgedev.cv19.app
+2021-08-12 17:09:20.549466 [DEBUG] mod_callcenter.c:3375 Queue has 0 waiting calls.
+2021-08-12 17:09:20.549466 [DEBUG] switch_core_state_machine.c:651 (sofia/internal/1002@bridgedev.cv19.app:6060) State EXECUTE going to sleep
+2021-08-12 17:09:20.549466 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/1002@bridgedev.cv19.app:6060) Running State Change CS_HIBERNATE (Cur 2 Tot 12712)
+2021-08-12 17:09:20.549466 [DEBUG] switch_core_state_machine.c:666 (sofia/internal/1002@bridgedev.cv19.app:6060) State HIBERNATE
+2021-08-12 17:09:20.549466 [DEBUG] mod_sofia.c:191 sofia/internal/1002@bridgedev.cv19.app:6060 SOFIA HIBERNATE
+2021-08-12 17:09:20.549466 [DEBUG] switch_ivr_bridge.c:1144 (sofia/internal/1002@bridgedev.cv19.app:6060) State Change CS_HIBERNATE -> CS_RESET
+2021-08-12 17:09:20.549466 [DEBUG] switch_core_state_machine.c:666 (sofia/internal/1002@bridgedev.cv19.app:6060) State HIBERNATE going to sleep
+2021-08-12 17:09:20.549466 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/1002@bridgedev.cv19.app:6060) Running State Change CS_RESET (Cur 2 Tot 12712)
+2021-08-12 17:09:20.549466 [DEBUG] switch_core_state_machine.c:647 (sofia/internal/1002@bridgedev.cv19.app:6060) State RESET
+2021-08-12 17:09:20.549466 [DEBUG] mod_sofia.c:172 sofia/internal/1002@bridgedev.cv19.app:6060 SOFIA RESET
+2021-08-12 17:09:20.549466 [DEBUG] switch_ivr_bridge.c:1129 sofia/internal/1002@bridgedev.cv19.app:6060 CUSTOM RESET
+2021-08-12 17:09:20.549466 [DEBUG] switch_ivr_bridge.c:1136 (sofia/internal/1002@bridgedev.cv19.app:6060) State Change CS_RESET -> CS_SOFT_EXECUTE
+2021-08-12 17:09:20.549466 [DEBUG] switch_core_state_machine.c:647 (sofia/internal/1002@bridgedev.cv19.app:6060) State RESET going to sleep
+2021-08-12 17:09:20.549466 [DEBUG] switch_core_state_machine.c:585 (sofia/internal/1002@bridgedev.cv19.app:6060) Running State Change CS_SOFT_EXECUTE (Cur 2 Tot 12712)
+2021-08-12 17:09:20.549466 [DEBUG] switch_core_state_machine.c:657 (sofia/internal/1002@bridgedev.cv19.app:6060) State SOFT_EXECUTE
+2021-08-12 17:09:20.549466 [DEBUG] mod_sofia.c:662 SOFIA SOFT_EXECUTE
+2021-08-12 17:09:20.549466 [DEBUG] switch_ivr_bridge.c:1154 sofia/internal/1002@bridgedev.cv19.app:6060 CUSTOM SOFT_EXECUTE
+2021-08-12 17:09:20.549466 [DEBUG] switch_ivr_bridge.c:1186 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State Change CS_RESET -> CS_SOFT_EXECUTE
+2021-08-12 17:09:20.549466 [DEBUG] switch_core_state_machine.c:585 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) Running State Change CS_SOFT_EXECUTE (Cur 2 Tot 12712)
+2021-08-12 17:09:20.549466 [DEBUG] switch_core_state_machine.c:657 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State SOFT_EXECUTE
+2021-08-12 17:09:20.549466 [DEBUG] mod_rtc.c:152 RTC SOFT_EXECUTE
+2021-08-12 17:09:20.549466 [DEBUG] switch_ivr_bridge.c:1154 verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c CUSTOM SOFT_EXECUTE
+2021-08-12 17:09:20.549466 [DEBUG] switch_core_state_machine.c:401 verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c Standard SOFT_EXECUTE
+2021-08-12 17:09:20.549466 [DEBUG] switch_core_state_machine.c:657 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State SOFT_EXECUTE going to sleep
+2021-08-12 17:09:20.569466 [DEBUG] switch_ivr_bridge.c:1683 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State Change CS_SOFT_EXECUTE -> CS_CONSUME_MEDIA
+2021-08-12 17:09:20.569466 [DEBUG] switch_core_state_machine.c:585 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) Running State Change CS_CONSUME_MEDIA (Cur 2 Tot 12712)
+2021-08-12 17:09:20.569466 [DEBUG] switch_core_state_machine.c:663 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State CONSUME_MEDIA
+2021-08-12 17:09:20.569466 [DEBUG] switch_core_media.c:12796 verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c PAUSE Jitterbuffer
+2021-08-12 17:09:20.569466 [DEBUG] switch_ivr_bridge.c:1058 verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c CUSTOM HOLD
+2021-08-12 17:09:20.569466 [DEBUG] switch_core_state_machine.c:663 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State CONSUME_MEDIA going to sleep
+2021-08-12 17:09:20.569466 [DEBUG] switch_ivr_bridge.c:1793 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State Change CS_CONSUME_MEDIA -> CS_EXCHANGE_MEDIA
+2021-08-12 17:09:20.569466 [DEBUG] switch_core_state_machine.c:585 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) Running State Change CS_EXCHANGE_MEDIA (Cur 2 Tot 12712)
+2021-08-12 17:09:20.569466 [DEBUG] switch_core_state_machine.c:654 (verto.rtc/3dc48b1e-bffa-4907-a484-a201283cff5c) State EXCHANGE_MEDIA
+2021-08-12 17:09:20.569466 [DEBUG] mod_rtc.c:146 RTC EXCHANGE_MEDIA
+2021-08-12 17:09:20.569466 [DEBUG] mod_callcenter.c:2009 Member "1002" 1002 is bridged to agent 239ccb22-8868-43f7-a945-81c0ec915c4d
+2021-08-12 17:09:20.569466 [DEBUG] mod_callcenter.c:1301 Updated tier: Agent 239ccb22-8868-43f7-a945-81c0ec915c4d in Queue 19389@bridgedev.cv19.app set state = Active Inbound
+2021-08-12 17:09:20.569466 [DEBUG] mod_callcenter.c:1180 Updated Agent 239ccb22-8868-43f7-a945-81c0ec915c4d set state = In a queue call
+2021-08-12 17:09:20.569466 [DEBUG] switch_core_media.c:16097 Engaging Write Buffer at 1920 bytes to accommodate 1920->1920
+2021-08-12 17:09:20.609469 [DEBUG] switch_core_media.c:16097 Engaging Write Buffer at 3840 bytes to accommodate 3840->3840
+2021-08-12 17:09:21.669466 [INFO] switch_rtp.c:3284 Changing audio DTLS state from HANDSHAKE to SETUP
+2021-08-12 17:09:21.689577 [INFO] switch_rtp.c:3191 audio Fingerprint Verified.
+2021-08-12 17:09:21.689577 [INFO] switch_rtp.c:4282 Activating audio Secure RTP SEND
+2021-08-12 17:09:21.689577 [INFO] switch_rtp.c:4260 Activating audio Secure RTP RECV
+2021-08-12 17:09:21.689577 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2021-08-12 17:09:21.689577 [INFO] switch_rtp.c:3233 Changing audio DTLS state from SETUP to READY
+2021-08-12 17:09:21.689577 [DEBUG] switch_core_sqldb.c:2836 Secure Type: srtp:dtls:AES_CM_128_HMAC_SHA1_80
+2021-08-12 17:09:22.089549 [DEBUG] mod_opus.c:719 Opus decoder stats: Frames[0] PLC[0] FEC[0]
+2021-08-12 17:09:22.089549 [DEBUG] mod_opus.c:734 Opus encoder stats: Frames[531] Bytes encoded[60640] Encoded length ms[10620] Average encoded bitrate bps[48512]
+2021-08-12 17:09:22.089549 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:22.109471 [DEBUG] mod_opus.c:719 Opus decoder stats: Frames[69] PLC[0] FEC[0]
+2021-08-12 17:09:22.109471 [DEBUG] mod_opus.c:734 Opus encoder stats: Frames[0] Bytes encoded[0] Encoded length ms[0] Average encoded bitrate bps[0]
+2021-08-12 17:09:22.109471 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:22.109471 [DEBUG] switch_rtp.c:1923 rtcp_stats_init: audio ssrc[568063433] base_seq[29660]
+2021-08-12 17:09:22.249471 [DEBUG] mod_opus.c:719 Opus decoder stats: Frames[0] PLC[0] FEC[0]
+2021-08-12 17:09:22.249471 [DEBUG] mod_opus.c:734 Opus encoder stats: Frames[8] Bytes encoded[1042] Encoded length ms[160] Average encoded bitrate bps[0]
+2021-08-12 17:09:22.249471 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:22.269486 [DEBUG] mod_opus.c:719 Opus decoder stats: Frames[8] PLC[0] FEC[0]
+2021-08-12 17:09:22.269486 [DEBUG] mod_opus.c:734 Opus encoder stats: Frames[0] Bytes encoded[0] Encoded length ms[0] Average encoded bitrate bps[0]
+2021-08-12 17:09:22.269486 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:22.289482 [DEBUG] mod_opus.c:719 Opus decoder stats: Frames[0] PLC[0] FEC[0]
+2021-08-12 17:09:22.289482 [DEBUG] mod_opus.c:734 Opus encoder stats: Frames[2] Bytes encoded[243] Encoded length ms[40] Average encoded bitrate bps[0]
+2021-08-12 17:09:22.289482 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:22.309472 [DEBUG] mod_opus.c:719 Opus decoder stats: Frames[2] PLC[0] FEC[0]
+2021-08-12 17:09:22.309472 [DEBUG] mod_opus.c:734 Opus encoder stats: Frames[0] Bytes encoded[0] Encoded length ms[0] Average encoded bitrate bps[0]
+2021-08-12 17:09:22.309472 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:22.789482 [DEBUG] mod_opus.c:719 Opus decoder stats: Frames[0] PLC[0] FEC[0]
+2021-08-12 17:09:22.789482 [DEBUG] mod_opus.c:734 Opus encoder stats: Frames[25] Bytes encoded[2315] Encoded length ms[500] Average encoded bitrate bps[0]
+2021-08-12 17:09:22.789482 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:22.809481 [DEBUG] mod_opus.c:719 Opus decoder stats: Frames[25] PLC[0] FEC[0]
+2021-08-12 17:09:22.809481 [DEBUG] mod_opus.c:734 Opus encoder stats: Frames[0] Bytes encoded[0] Encoded length ms[0] Average encoded bitrate bps[0]
+2021-08-12 17:09:22.809481 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:22.829481 [DEBUG] mod_opus.c:719 Opus decoder stats: Frames[0] PLC[0] FEC[0]
+2021-08-12 17:09:22.829481 [DEBUG] mod_opus.c:734 Opus encoder stats: Frames[2] Bytes encoded[217] Encoded length ms[40] Average encoded bitrate bps[0]
+2021-08-12 17:09:22.829481 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:22.849513 [DEBUG] mod_opus.c:719 Opus decoder stats: Frames[2] PLC[0] FEC[0]
+2021-08-12 17:09:22.849513 [DEBUG] mod_opus.c:734 Opus encoder stats: Frames[0] Bytes encoded[0] Encoded length ms[0] Average encoded bitrate bps[0]
+2021-08-12 17:09:22.849513 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:22.909491 [DEBUG] mod_opus.c:719 Opus decoder stats: Frames[0] PLC[0] FEC[0]
+2021-08-12 17:09:22.909491 [DEBUG] mod_opus.c:734 Opus encoder stats: Frames[4] Bytes encoded[449] Encoded length ms[80] Average encoded bitrate bps[0]
+2021-08-12 17:09:22.909491 [DEBUG] mod_opus.c:613 Opus encoder: set bitrate to local settings [72000bps]
+2021-08-12 17:09:22.929478 [DEBUG] mod_opus.c:719 Opus decoder stats: Frames[4] PLC[0] FEC[0]
