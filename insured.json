@@ -1,0 +1,13 @@
+{"policy_number":"898989898",
+"DOT_number":"060066600",
+"Full name":"Test Cover Test",
+"Phone number":"+16505555222",
+"Email":"test@coverwhale.com",
+"Insurance status":"Valid", //(Onboarding, Valid, Probation, Expired)
+"Insurance valid dates":"10/10/2023", (xx/xx/xxxx-xx/xx/xxxx)
+"Date insured since":"10/10/2000", (xx/xx/xxxx)
+"State insured in":"US",
+"Driver's license number":"5465-6566-4542-565",
+"Driver's license state":"NC",
+"Truck model":"MR",
+"Truck year":"2022"}
