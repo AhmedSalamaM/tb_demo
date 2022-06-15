@@ -1,13 +1,16 @@
 {"policy_number":"898989898",
-"DOT_number":"060066600",
-"Full name":"Test Cover Test",
-"Phone number":"+16505555222",
-"Email":"test@coverwhale.com",
-"Insurance status":"Valid", 
-"Insurance valid dates":["10/10/2023","05/05/2025"], 
-"Date insured since":"10/10/2000", 
-"State insured in":"US",
-"Driver's license number":"5465-6566-4542-565",
-"Driver's license state":"NC",
-"Truck model":"MR",
-"Truck year":"2022"}
+"dot_number":"060066600",
+"full_name":"Test Cover Test",
+"phone_number":"+16505555222",
+"email":"test@coverwhale.com",
+"insurance_status":"Valid", 
+"insurance_valid_dates":["10/10/2023","05/05/2025"], 
+"insured_since":"10/10/2000", 
+"insured_sate:"US",
+"license_umber":"5465-6566-4542-565",
+"license_state":"NC",
+"truck_model":"MR",
+"truck_year":"2022",
+"company":"NASA"
+"verified"true
+"logged_into":true}
