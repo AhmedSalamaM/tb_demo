@@ -11,6 +11,6 @@
 "license_state":"NC",
 "truck_model":"MR",
 "truck_year":"2022",
-"company":"NASA"
-"verified":true
-"logged_into":true}
+"company":"NASA",
+"verified":true,
+"logged_into":false}
